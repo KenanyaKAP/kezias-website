@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+	<title> www.desawisatapujonkidul </title>
+	<body>
+		<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<style>
+			* {box-sizing: border-box}
+			.mySlides1, .mySlides2 , .mySlides3 {display: none}
+			img {vertical-align: middle;}
+
+
+			/* Slideshow container */
+			.slideshow-container {
+			  max-width: auto;
+			  position: relative;
+			  margin: 0;
+			}
+			
+			/* Next & previous buttons */
+			.prev, .next {
+			  cursor: pointer;
+			  position: absolute;
+			  top: 48%;
+			  width: auto;
+			  padding: 16px;
+			  margin-top: -22px;
+			  color: #b45227;
+			  font-weight: bold;
+			  font-size: 36px;
+			  transition: 0.6s ease;
+			  border-radius: 10px 10px 10px 10px;
+			  user-select: none;
+			} 
+			
+			/* Next & previous buttons */
+			.prev2, .next2 {
+			  cursor: pointer;
+			  position: absolute;
+			  top: 48%;
+			  width: auto;
+			  padding: 16px;
+			  margin-top: -22px;
+			  color: #e2d8c3  ;
+			  font-weight: bold;
+			  font-size: 36px;
+			  transition: 0.6s ease;
+			  border-radius: 10px 10px 10px 10px;
+			  user-select: none;
+			} 
+			
+			/* Position the "next button" to the right */
+			.next, .next2 {
+			  right: 5%;
+			  border-radius: 10px 10px 10px 10px;
+			}
+			
+			/* Position the "left button" to the left */
+			.prev, .prev2 {
+			  left: 5%;
+			  border-radius: 10px 10px 10px 10px;
+			}
+			
+			/* On hover, add a black background color with a little bit see-through */
+			.prev:hover, .next:hover,.prev2:hover, .next2:hover  {
+			  background-color: rgba(0,0,0,0.8);
+			}
+
+			/* Caption text */
+			.text {
+			  color: #f2f2f2;
+			  font-size: 15px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  bottom: 8px;
+			  width: 100%;
+			  text-align: center;
+			}
+			
+			/* On hover, add a black background color with a little bit see-through */
+			.prev:hover, .next:hover,.prev2:hover, .next2:hover  {
+			  background-color: rgba(0,0,0,0.8);
+			}
+
+			/* Caption text */
+			.text {
+			  color: #f2f2f2;
+			  font-size: 15px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  bottom: 8px;
+			  width: 100%;
+			  text-align: center;
+			}
+			
+			
+
+			/* Number text (1/3 etc) */
+			.numbertext {
+			  color: #f2f2f2;
+			  font-size: 12px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  top: 0;
+			}
+
+			/* The dots/bullets/indicators */
+			.dot {
+			  cursor: pointer;
+			  height: 15px;
+			  width: 15px;
+			  margin: 0 2px;
+			  background-color: #bbb;
+			  border-radius: 50%;
+			  display: inline-block;
+			  transition: background-color 0.6s ease;
+			}
+			
+			.active, .dot:hover {
+			  background-color: #717171;
+			}
+
+			/* Fading animation */
+			.fade {
+			  -webkit-animation-name: fade;
+			  -webkit-animation-duration: 1.5s;
+			  animation-name: fade;
+			  animation-duration: 1.5s;
+			}
+			
+			@-webkit-keyframes fade {
+			  from {opacity: .4} 
+			  to {opacity: 1}
+			}
+
+			@keyframes fade {
+			  from {opacity: .4} 
+			  to {opacity: 1}
+			}
+
+			/* On smaller screens, decrease text size */
+			@media only screen and (max-width: 300px) {
+			  .prev, .next,.text {font-size: 11px}
+			}
+			
+			body {margin:0;}
+			.navbar {
+			  overflow: hidden;
+			  background-color: #333;
+			  position: fixed;
+			  top: 0;
+			  width: 100%;
+			}
+					
+			.centered {
+			  position: absolute;
+			  top: 50%;
+			  left: 50%;
+			  width: 100%;
+			  transform: translate(-50%, -50%);
+			}
+			
+			.container2 {
+			  position: absolute;
+			  top: 234%;
+			  width: 72.5%;
+			  margin-left: auto;
+			  margin-right: auto;
+			  left: 0;
+			  right: 0;
+			}
+
+			.row:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+			
+			/* Six columns side by side */
+			.column {
+			  float: left;
+			  width: 16.66%;
+			}
+
+			/* Add a transparency effect for thumnbail images */
+			.demo {
+			  opacity: 0.6;
+			}
+
+			.active,
+			.demo:hover {
+			  opacity: 1;
+			}
+			
+			html {
+			  scroll-behavior: smooth;
+			}
+			</style>
+		</head>
+		
+		<body style="margin:0;">
+		
+			<section id="Beranda">
+			
+				<img src="img\img1.jpg" style="width:100%;" />
+				
+				<div class="slideshow-container">
+					<div class="mySlides1 fade">
+						<img src="img\img2.jpg" style="width:100%;"/>
+					</div>
+					
+					<div class="mySlides1 fade">
+						<img src="img\img3.jpg" style="width:100%;"/>
+					</div>
+					
+					<div class="mySlides1 fade">
+						<img src="img\img4.jpg" style="width:100%;"/>
+					</div>
+					
+					<div class="mySlides1 fade">
+						<img src="img\img5.jpg" style="width:100%;"/>
+					</div>
+					
+					<div class="mySlides1 fade">
+						<img src="img\img6.jpg" style="width:100%;"/>
+					</div>
+					
+					<div class="mySlides1 fade">
+						<img src="img\img7.jpg" style="width:100%;"/>
+					</div>
+				</div>
+
+				<img src="img\logohome.png" style="width:100%; position:absolute; top:5%;" />
+
+			</section>
+			<section id="Wisata">
+			
+				<img src="img\img8.jpg" style="width:100%;" />
+				
+				<div class="slideshow-container" style="position: absolute; top:105%;">
+				
+					<div class="mySlides2 fade">
+						<img src="img\img8a.png" style="width:100%;" />
+					</div>
+					
+					<div class="mySlides2 fade">
+						<img src="img\img8b.png" style="width:100%;" />
+					</div>
+					
+					<a class="prev" onclick="plusSlides(-1,1)"> &#10094; </a>
+					<a class="next" onclick="plusSlides(1,1)"> &#10095; </a>
+				
+				</div>
+			
+			</section>
+			<section id="Galeri">
+			
+				<img src="img\img9.jpg" style="width:100%;" />
+				
+				<div class="container2">
+				
+					<div class="mySlides3 fade">
+						<img src="img\img10.jpg" style="width:100%;" />
+					</div>
+					
+					<div class="mySlides3 fade">
+						<img src="img\img11.jpg" style="width:100%;" />
+					</div>
+					
+					<div class="mySlides3 fade">
+						<img src="img\img12.jpg" style="width:100%;" />
+					</div>
+					
+					<div class="mySlides3 fade">
+						<img src="img\img13.jpg" style="width:100%;" />
+					</div>
+					
+					<div class="mySlides3 fade">
+						<img src="img\img14.jpg" style="width:100%;" />
+					</div>
+					
+					<div class="mySlides3 fade">
+						<img src="img\img15.jpg" style="width:100%;" />
+					</div>
+					
+					<a class="prev" style="left:-80px" onclick="plusSlides3(-1,2)"> ❮ </a>
+					<a class="next" style="right:-80px" onclick="plusSlides3(1,2)"> ❯ </a>
+				
+					<div class="row">
+					
+						<div class="column">
+							<img class="demo cursor" src="img\img10.jpg" style="width:100%;" onclick="currentSlide(1,2)" />
+						</div>
+						
+						<div class="column">
+							<img class="demo cursor" src="img\img11.jpg" style="width:100%;" onclick="currentSlide(2,2)" />
+						</div>
+						
+						<div class="column">
+							<img class="demo cursor" src="img\img12.jpg" style="width:100%;" onclick="currentSlide(3,2)" />
+						</div>
+						
+						<div class="column">
+							<img class="demo cursor" src="img\img13.jpg" style="width:100%;" onclick="currentSlide(4,2)" />
+						</div>
+						
+						<div class="column">
+							<img class="demo cursor" src="img\img14.jpg" style="width:100%;" onclick="currentSlide(5,2)" />
+						</div>
+						
+						<div class="column">
+							<img class="demo cursor" src="img\img15.jpg" style="width:100%;" onclick="currentSlide(6,2)" />
+						</div>
+					
+					</div>
+				
+				</div>
+			
+			</section>
+			<section id="Artikel">
+			
+				<img src="img\img16.jpg" style="width:100%;" />
+				
+				<div class="slideshow-container" style="position: absolute; top:340.5%;" >
+				
+					<div class="mySlides4 fade">
+						<img src="img\img17.png" style="width:100%;" />
+					</div>
+					
+					<div class="mySlides4 fade">
+						<img src="img\img18.png" style="width:100%;" />
+					</div>
+					
+					<a class="prev2" onclick="plusSlides(-1,3)"> &#10094; </a>
+					<a class="next2" onclick="plusSlides(1,3)"> &#10095; </a>
+				
+				</div>
+			
+			</section>
+			<section id="Kontak">
+			
+				<img src="img\img19.jpg" style="width:100%;" />
+			
+			</section>
+			<section id="Additional">
+			
+				<img src="img\img1.jpg" style="width:100%; position:fixed; top:0; margin:0;" />
+				
+				<a href="#Beranda">
+					<img src="img\direct.png" style="
+					width:6%; height:5.5%; position:fixed; top:0; left: 6.2%; display:;" />
+				</a>
+				
+				<a href="#Wisata">
+					<img src="img\direct.png" style="
+					width:6%; height:5.5%; position:fixed; top:0; left: 16%; display:;" />
+				</a>
+				
+				<a href="#Galeri">
+					<img src="img\direct.png" style="
+					width:6%; height:5.5%; position:fixed; top:0; left: 25.5%; display:;" />
+				</a>
+				
+				<a href="#Artikel">
+					<img src="img\direct.png" style="
+					width:6%; height:5.5%; position:fixed; top:0; left: 35%; display:;" />
+				</a>
+				
+				<a href="#Kontak">
+					<img src="img\direct.png" style="
+					width:6%; height:5.5%; position:fixed; top:0; left: 45.2%; display:;" />
+				</a>
+			
+			</section>
+			
+			<script>
+			var slideIndex = [0,1,1,1];
+			var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"]
+			
+			showSlides2(0);
+			showSlides(1, 1);
+			showSlides3(1, 2);
+			showSlides(1, 3);
+			
+			function plusSlides(n, no) {
+			  showSlides(slideIndex[no] += n, no);
+			}
+			
+			function plusSlides3(n, no) {
+			  showSlides3(slideIndex[no] += n, no);
+			}
+			
+			function currentSlide(n, no) {
+			  showSlides3(slideIndex[no] = n, no);
+			}
+			
+			function showSlides(n, no) {
+			  var x = document.getElementsByClassName(slideId[no]);
+			  if (n > x.length) {slideIndex[no] = 1}    
+			  if (n < 1) {slideIndex[no] = x.length}
+			  for ( var i = 0; i < x.length; i++) {
+				 x[i].style.display = "none";  
+			  }
+			  x[slideIndex[no]-1].style.display = "block";  
+			}
+			
+			function showSlides2(no) {
+			  var slides = document.getElementsByClassName(slideId[no]);
+			  for ( var i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			  }
+			  slideIndex[no]++;
+			  if (slideIndex[no] > slides.length) {slideIndex[no] = 1}
+			  slides[slideIndex[no]-1].style.display = "block"; 
+			  setTimeout(showSlides2, 3500,no); // Change image every 2 seconds
+			}
+			
+			function showSlides3(n, no) { 
+			  var i;
+			  var slides = document.getElementsByClassName(slideId[no]);
+			  var dots = document.getElementsByClassName("demo");
+			  if (n > slides.length) {slideIndex[no] = 1}
+			  if (n < 1) {slideIndex[no] = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+				  slides[i].style.display = "none";
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				  dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex[no]-1].style.display = "block";
+			  dots[slideIndex[no]-1].className += " active";
+			}
+			</script>
+		</body>
+	</body>
+</html>
